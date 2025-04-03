@@ -1,0 +1,441 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'MyKawaiiFont';
+    background-color: #ffeef7;
+    overflow: hidden;
+  }
+  
+
+  .screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  @font-face {
+    font-family: 'MyKawaiiFont';
+    src: url('font/CHERI___.TTF') format('truetype');
+
+  }
+  @font-face {
+    font-family: 'MyKawaiiFont2';
+    src: url('font/CupiddeLocke.ttf') format('truetype');
+
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .screen-container {
+    display: flex;
+    width: 600vw; 
+    transition: transform 0.7s ease-in-out; 
+    
+  }
+  
+  
+  .screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0; 
+  }
+  
+
+ 
+  .slide-left {
+    transform: translateX(-100vw); 
+  }
+  
+
+  .button {
+    background-color:#fcbbc6 ;
+    color: white;
+    text-decoration: brown;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 8px 15px rgba(255, 182, 193, 0.4);
+    position: absolute; 
+    bottom: 35%; 
+    z-index: 2; 
+    font-family:'MyKawaiiFont2' ;
+
+  }
+  
+
+  .book {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    font-family: 'MyKawaiiFont';
+    font-size: 1.6rem;
+    color: #fcbbc6;
+    text-shadow: 0 0 10px #fcf3f4;
+  }
+  
+  #cookieSelector {
+    display: flex;
+  }
+  #kookie1 {
+    display: flex;
+  }
+  #kookie2 {
+    display : flex;
+  }
+.book{
+    background-image: url('selector/main.jpeg');
+    width: 90%;
+    height: 90vh;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screenhidden {
+    position: relative;
+}
+.book1{
+  background-image: url('selector/1.jpeg');
+  width: 100%;
+  height: 100vh;
+  background-size:contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+.book1 {
+  width: 90vw;
+    height: 90vh;
+    display: flex;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    font-family: 'MyKawaiiFont';
+    font-size: 1.6rem;
+    color: #fcbbc6;
+    text-shadow: 0 0 10px #fee6e9;
+}
+.book1 h2 {
+  position: absolute;
+    top: 13%; 
+    right: 13.5%;
+}
+.book1 ::after{
+  content:"";
+  background: url('kookies/darkcocoa.jpeg');
+  display: block;
+  background-size: contain;
+  width: 195px; /* Adjust size */
+            height: 222px; /* Adjust size */
+            position: absolute;
+            top: 440%;
+            right: 240%;
+            transform: translate(-50%, -50%);
+}
+.book1 h3{
+  color: rgb(144, 62, 62);
+  position: relative;
+  top:42%;
+  left: 26%;
+  text-shadow: 0 0 10px #f9ae7c;
+}
+#a{
+  color: rgb(144, 62, 62);
+  position: absolute;
+  top:74%;
+  left: 43%;
+  text-shadow: 0 0 10px #f9ae7c;
+}
+
+.nextbutton {
+  background-color:#fcbbc6 ;
+    color: white;
+    text-decoration: brown;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 8px 15px rgba(255, 182, 193, 0.4);
+    position: absolute; 
+    bottom: 12%; 
+    margin-left: 12%;
+    z-index: 2; 
+    font-family:'MyKawaiiFont2' ;
+
+}
+.backbutton {
+  background-color:#fcbbc6 ;
+    color: white;
+    text-decoration: brown;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 8px 15px rgba(255, 182, 193, 0.4);
+    position: absolute; 
+    bottom: 12%; 
+    margin-left: 21%;
+    z-index: 2; 
+    font-family:'MyKawaiiFont2' ;
+
+}
+.book2{
+  background-image: url('selector/2.jpeg');
+  width: 100%;
+  height: 100vh;
+  background-size:contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: left ;
+}
+.book2 {
+  width: 90vw;
+    height: 90vh;
+    display: flex;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    font-family: 'MyKawaiiFont';
+    font-size: 1.6rem;
+    color: #fcbbc6;
+    text-shadow: 0 0 10px #fee6e9;
+}
+.book2 h2 {
+  position: absolute;
+    top: 24.5%; 
+    right: 24.5%;
+}
+.book2 ::after{
+  content:"";
+  background: url('kookies/mocha.webp');
+  display: block;
+  background-size: contain;
+  width: 250px; /* Adjust size */
+            height: 250px; /* Adjust size */
+            position: absolute;
+            top: 390%;
+            right: 133%;
+            transform: translate(-50%, -50%);
+}
+.book2 h3{
+  color: rgb(144, 62, 62);
+  position: relative;
+  top:65%;
+  left: 12%;
+  text-shadow: 0 0 10px #f9ae7c;
+}
+#b{
+  color: rgb(144, 62, 62);
+  position: relative;
+  top:50%;
+  left: 15.5%;
+  text-shadow: 0 0 10px #f9ae7c;
+}
+.book3{
+  background-image: url('selector/3.jpeg');
+  width: 100%;
+  height: 100vh;
+  background-size:contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  
+}
+.book3 {
+  width: 90vw;
+    height: 90vh;
+    display: flex;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    font-family: 'MyKawaiiFont';
+    font-size: 1.6rem;
+    color: #fcbbc6;
+    text-shadow: 0 0 10px #fee6e9;
+}
+.book3 ::after{
+  content:"";
+  background: url('kookies/matcha.webp');
+  display: block;
+  background-size: contain;
+  width: 215px; /* Adjust size */
+            height: 270px; /* Adjust size */
+            position: absolute;
+            top: 350%;
+            right: 164%;
+            transform: translate(-50%, -50%);
+}
+.book3 h2 {
+  position: absolute;
+    top: 17%; 
+    right: 25%;
+}
+.book3 h3{
+  text-align: center;
+  color: rgb(112, 195, 52);
+  position: relative;
+  top:52%;
+  left: 11.4%;
+  text-shadow: 0 0 10px #a9ed98;
+}
+#c{
+  color: rgb(112, 195, 52);
+  position: relative;
+  top:50%;
+  left: 20%;
+  text-shadow: 0 0 10px #a9ed98;
+}
+.book4{
+  background-image: url('selector/4.jpeg');
+  width: 100%;
+  height: 100vh;
+  background-size:contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: left ;
+}
+.book4 {
+  width: 90vw;
+    height: 90vh;
+    display: flex;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    font-family: 'MyKawaiiFont';
+    font-size: 1.6rem;
+    color: #fcbbc6;
+    text-shadow: 0 0 10px #fee6e9;
+}
+.book4 h2 {
+  position: absolute;
+    top: 13%; 
+    right: 12.25%;
+}
+.book4 ::after{
+  content:"";
+  background: url('kookies/blueberryalmond.webp');
+  display: block;
+  background-size: contain;
+  width: 250px; /* Adjust size */
+            height: 250px; /* Adjust size */
+            position: absolute;
+            top: 480%;
+            right: 203%;
+            transform: translate(-50%, -50%);
+}
+.book4 h3{
+  color: rgb(172, 94, 151);
+  position: relative;
+  top:18%;
+  left: 12.5%;
+  text-align: center;
+  text-shadow: 0 0 10px #ff8bd8;
+}
+#d{
+  color: rgb(172, 94, 151);
+  position: relative;
+  top:69%;
+  left: 16.5%;
+  text-shadow: 0 0 10px #ff8bd8;
+}
+
+.book5{
+  background-image: url('selector/5.jpeg');
+  width: 100%;
+  height: 100vh;
+  background-size:contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: left ;
+}
+.book5 {
+  width: 90vw;
+    height: 90vh;
+    display: flex;
+    background-color: #fffaf5;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    font-family: 'MyKawaiiFont';
+    font-size: 1.6rem;
+    color: #fcbbc6;
+    text-shadow: 0 0 10px #fee6e9;
+}
+.book5 h2 {
+  position: absolute;
+    top: 16%; 
+    right: 11.5%;
+}
+.book5 ::after{
+  content:"";
+  background: url('kookies/checkerboard.webp');
+  display: block;
+  background-size: contain;
+  width: 205px; /* Adjust size */
+            height: 205px; /* Adjust size */
+            position: absolute;
+            top: 420%;
+            right: 235%;
+            transform: translate(-50%, -50%);
+}
+.book5 h3{
+  color: rgb(144, 62, 62);
+  position: relative;
+  top:44.5%;
+  left: 45.5%;
+  text-align: center;
+  text-shadow: 0 0 10px #f9ae7c;
+}
+#e{
+  color: rgb(144, 62, 62);
+  position: relative;
+  top:52%;
+  left: 05.5%;
+  text-align: center;
+  text-shadow: 0 0 10px #f9ae7c;
+}
+#e1{
+  color: rgb(144, 62, 62);
+  position: relative;
+  top:77%;
+  left: 14.5%;
+  text-align: center;
+  text-shadow: 0 0 10px #f9ae7c;
+}

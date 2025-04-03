@@ -1,0 +1,219 @@
+:root {
+    --pink-pastel: #FFE4E1;
+    --mint-pastel: #E0F2E9;
+    --lavender-pastel: #E6E6FA;
+}
+
+.game-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--pink-pastel);
+    display: flex;
+    flex-direction: column;
+}
+/*
+.kitchen-scene {
+    flex: 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.ui-container {
+    flex: 1;
+    background-color: var(--lavender-pastel);
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+}
+
+
+.interactive-element {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.button {
+    border-radius: 25px;
+    padding: 15px 30px;
+    border: none;
+    background-color: var(--mint-pastel);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+:root {
+    --pastel-pink: #FFE4E8;
+    --pastel-yellow: #FFF4E0;
+    --pastel-mint: #E0F4E8;
+}
+
+.kitchen {
+    background-color: var(--pastel-pink);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ingredient {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}*/
+
+/*
+.ingredient:hover {
+    transform: scale(1.1);
+}*/
+canvas {
+    background-color: #FFE4E1; 
+    border: 2px solid #B0C4B1;
+}/*
+#mixingBowl {
+    width: 150px;
+    height: 150px;
+    background-color: #E0F2E9;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+*/    
+  
+  
+  .kitchen-scene {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    background-color: #FFF4E0;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .pantry, .workspace, .oven {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img.ingredient, #ovenImage {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+  }
+  
+  #mixingBowl {
+    width: 150px;
+    height: 150px;
+    background-color: #E0F4E8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: inset 0 8px 12px rgba(0,0,0,0.1);
+  }
+  
+  .ui-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button {
+    background-color: #E0F4E8;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: black;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .button:hover {
+    background-color: #C8E6C9;
+  }
+  .home-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    background-color:white;
+    color: pink;
+    font-size: 40px;
+    text-decoration: black;
+    font-family: 'MyKawaiiFont2';
+    padding: 12px 45px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  @font-face {
+    font-family: 'MyKawaiiFont';
+    src: url('font/CHERI___.TTF') format('truetype');
+  }
+  @font-face {
+    font-family: 'MyKawaiiFont2';
+    src: url('font/CandyHeart.ttf') format('truetype');
+
+  }
+  
+  .title {
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-family: 'MyKawaiiFont'; 
+    font-size: 3em;  
+    /*text-shadow: 2px 2px 4px rgba(248, 172, 218, 0.7);*/
+    text-shadow: 
+    0 0 5px rgba(255, 182, 193, 0.6),  /* Light pink */
+    0 0 10px rgba(255, 182, 193, 0.6), 
+    0 0 15px rgba(255, 182, 193, 0.8),
+    0 0 20px rgba(255, 182, 193, 0.8),
+    0 0 25px rgba(255, 182, 193, 0.9);
+  animation: glitter 2s infinite linear;
+}
+
+/* Glitter animation with pastel shades */
+@keyframes glitter {
+  0% {
+    text-shadow: 
+      0 0 5px rgba(255, 182, 193, 0.6),
+      0 0 10px rgba(255, 182, 193, 0.6),
+      0 0 15px rgba(255, 182, 193, 0.8),
+      0 0 20px rgba(255, 182, 193, 0.8),
+      0 0 25px rgba(255, 182, 193, 0.9);
+  }
+  50% {
+    text-shadow: 
+      0 0 5px rgba(255, 105, 180, 0.6),  /* Hot pink */
+      0 0 10px rgba(255, 105, 180, 0.6),
+      0 0 15px rgba(255, 105, 180, 0.8),
+      0 0 20px rgba(255, 105, 180, 0.8),
+      0 0 25px rgba(255, 105, 180, 0.9);
+  }
+  100% {
+    text-shadow: 
+      0 0 5px rgba(221, 160, 221, 0.6),  /* Lavender */
+      0 0 10px rgba(221, 160, 221, 0.6),
+      0 0 15px rgba(221, 160, 221, 0.8),
+      0 0 20px rgba(221, 160, 221, 0.8),
+      0 0 25px rgba(221, 160, 221, 0.9);
+  }
+}
+
+
+  

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+    <!-- Wrapper for sliding transition -->
+    <div class="screen-container">
+
+        <!-- Cookie Selector Screen (Initial Screen) -->
+        <div id="cookieSelector" class="screen">
+            <div class="book">
+                <h2>Select the kookie you'd like to make</h2>
+            </div>
+            <button class="button" onclick="showKookie(1)">Show me kookies</button>
+        </div>
+
+        <!-- Kookie Screens -->
+        <div id="kookie1" class="screen hidden">
+            <div class="book1">
+                <h2>Kookie Option 1</h2>
+                <h3>Chocolate-Chip</h3>
+                <h3 id="a">Preparation time: 
+                30 to 45 minutes.
+                </h3>
+            </div>
+            <button class="nextbutton" onclick="showKookie(currentIndex + 1)">Next Kookie</button>
+            <button class="backbutton" onclick="goBack()">Go Back</button>
+        </div>
+
+        <div id="kookie2" class="screen hidden">
+            <div class="book2">
+                <h2>Kookie Option 2</h2>
+                <h3> Mocha cold brew</h3>
+                <h4 id="b">Preparation time: <br> 
+                40 to 50 <br> minutes.<h4>
+            </div>
+            <button class="nextbutton" onclick="showKookie(currentIndex + 1)">Next Kookie</button>
+            <button class="backbutton" onclick="goBack()">Go Back</button>
+        </div>
+
+        <div id="kookie3" class="screen hidden">
+            <div class="book3">
+                <h2>Kookie Option 3</h2>
+                <h3>Matcha <br>& <br> pistachio nuts</h3>
+                <h4 id="c">Preparation time: <br>
+                35 to 45 <br>minutes.
+                </h4>
+            </div>
+            <button class="nextbutton" onclick="showKookie(currentIndex + 1)">Next Kookie</button>
+            <button class="backbutton" onclick="goBack()">Go Back</button>
+        </div>
+
+        <div id="kookie4" class="screen hidden">
+            <div class="book4">
+                <h2>Kookie Option 4</h2>
+                <h3>Blueberry <br>& <br> almond</h3>
+                <h3 id="d">Preparation time: <br>
+                35 to 50 minutes.
+                </h3>
+            </div>
+            <button class="nextbutton" onclick="showKookie(currentIndex + 1)">Next Kookie</button>
+            <button class="backbutton" onclick="goBack()">Go Back</button>
+        </div>
+
+        <div id="kookie5" class="screen hidden">
+            <div class="book5">
+                <h2>Kookie Option 5</h2>
+                <h3>cocoa <br>& <br> vanilla</h3>
+                <h3 id="e">Preparation time: <br>
+                35 to 50 minutes.
+                </h3>
+                <h3 id="e1">end of options</h3>
+            </div>
+            <button class="backbutton" onclick="goBack()">Go Back</button>
+        </div>
+
+    </div>
+
+    <script>
+       let currentIndex = 0; // Track current screen index
+const screens = document.querySelectorAll(".screen"); // Select all screens
+
+function showKookie(index) {
+    if (index >= screens.length || index < 0) return; // Prevent out-of-bounds
+
+    // Hide the current screen
+    screens[currentIndex].classList.add("hidden");
+
+    // Update the current index
+    currentIndex = index;
+
+    // Show the new screen
+    screens[currentIndex].classList.remove("hidden");
+
+    // Move the screen-container
+    document.querySelector(".screen-container").style.transform = `translateX(-${currentIndex * 100}vw)`;
+}
+
+// Functions for Back button
+function goBack() {
+    if (currentIndex > 0) {
+        showKookie(currentIndex - 1);
+    } else {
+        showKookie(0); // Go back to selector
+    }
+}
+
+    </script>
+
+</body>
+</html>

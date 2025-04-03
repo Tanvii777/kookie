@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Cookie Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="kitchen-scene">
+            <div class="pantry"></div>
+            <div class="workspace"></div>
+            <div class="oven"></div>
+        </div>
+        <div class="ui-container">
+            <div class="recipe-book"></div>
+            <div class="ingredients-tray"></div>
+            <div class="tools-tray"></div>
+        </div>
+    </div>
+    <div class="kitchen">
+        <div class="pantry">
+            <img src="ingredients/flour2.png" class="ingredient">
+            <img src="ingredients/sugar1.png" class="ingredient">
+            <img src="ingredients/butter2.png" class="ingredient">
+        </div>
+        <div class="workspace">
+            <div id="mixingBowl">
+                <img src="ingredients/mixbowl2.png" height="100" alt="mixingbowl">
+                <p id="bowlMessage"></p>
+            </div>
+            <div class="cookie-cutters"></div>
+            <div class="oven">
+                <img src="ingredients/oven1.png" height="200" alt="oven">
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
